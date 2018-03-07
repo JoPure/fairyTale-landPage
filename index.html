@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tấm Cám Đại Chiến</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="css/video-js.min.css" type="text/css">
+</head>
+<body>
+<div class="pages_wrap">
+    <section class="pageBox">
+        <ul class="pages">
+            <li class="page1 curr">
+                <div class="rw body1">
+                    <a class="videoIcon videoBtn" href="javascript:videoSrc1();">
+                        <img src="img/1.png" class="img4">
+                        <img src="img/11.png" class="img3">
+                    </a>
+                </div>
+            </li>
+            <li class="page2">
+                <div class="rw body2">
+                    <a class="videoIcon videoBtn" href="javascript:videoSrc2();">
+                        <img src="img/2.png" class="img4">
+                        <img src="img/22.png" class="img3">
+                    </a>
+                </div>
+            </li>
+            <li class="page3">
+                <div class="rw body3">
+                    <a class="videoIcon videoBtn" href="javascript:videoSrc3();">
+                        <img src="img/3.png" class="img4">
+                        <img src="img/33.png" class="img3">
+                    </a>
+                </div>
+            </li>
+            <li class="page4">
+                <div class="rw body4">
+                    <a class="videoIcon videoBtn" href="javascript:videoSrc4();">
+                        <img src="img/4.png" class="img4">
+                        <img src="img/44.png" class="img3">
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <div class="leftIcon img2" onclick="left()"></div>
+        <div class="rightIcon img2" onclick="right()"></div>
+
+        <section class="toolBar">
+            <div class="box">
+                <div class="download">
+                    <a href="" class="QRcode"></a>
+                    <a href="http://m.onelink.me/b1249eaa" class="apple" target="_blank"></a>
+                    <a href="http://m.onelink.me/9189b8c8" class="android" target="_blank"></a>
+                </div>
+                <ul class="pageTab">
+                    <li class="one mark">
+                        <a href="javascript:;">
+                            <img src="img/btn1.png" class="img1">
+                            <img src="img/btn11.png" class="img2">
+
+                            <div class="progressBar"></div>
+                        </a>
+                    </li>
+                    <li class="two">
+                        <a href="javascript:;">
+                            <img src="img/btn2.png" class="img1">
+                            <img src="img/btn22.png" class="img2">
+
+                            <div class="progressBar"></div>
+                        </a>
+                    </li>
+                    <li class="three">
+                        <a href="javascript:;">
+                            <img src="img/btn3.png" class="img1">
+                            <img src="img/btn33.png" class="img2">
+                            <div class="progressBar"></div>
+                        </a>
+
+                    </li>
+                    <li class="four">
+                        <a href="javascript:;">
+                            <img src="img/btn4.png" class="img1">
+                            <img src="img/btn44.png" class="img2">
+                            <div class="progressBar"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <div class="wrap">
+        <div class="inner">
+            <div class="video">
+                <div class="videoMain">
+                    <img src="img/videoLoad.png" class="load" style="display:none">
+                    <video class="video-js vjs-default-skin" id="video" preload="auto" data-setup='{}'
+                           width="595px" height="376px" autoplay>
+                        <source src="http://1867799823.rsc.cdn77.org/cobequangkhandovn/home/media/wh.mp4"
+                                type="video/mp4"/>
+                    </video>
+                </div>
+                <a href="javascript:close();">
+                    <img src="img/videoSwitch.png" class="img1">
+                    <img src="img/videoSwitch1.png" class="img2">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="icopy">
+        <p>© 2016 www.cobequangkhandovn.com.All rights reserved.</p>
+    </div>
+</footer>
+</body>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/video.min.js"></script>
+<script src="js/main.js"></script>
+</html>
